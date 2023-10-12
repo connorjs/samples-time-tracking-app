@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { Button, Card } from "semantic-ui-react";
 
-import { millisecondsToHuman } from "./helpers.ts";
+import { millisecondsToHuman } from "../helpers.ts";
 import styles from "./timer-card.module.css";
 
 type TimeCardProps = {

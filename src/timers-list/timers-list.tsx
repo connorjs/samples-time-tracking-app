@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
 
-import { TimerCard } from "./timer-card.tsx";
-import { initialItems } from "./timer-data.ts";
-import styles from "./timers.module.css";
+import { TimerCard } from "../timer-card/timer-card.tsx";
+import { initialItems } from "../timer-data/timer-data.ts";
+import styles from "./timers-list.module.css";
 
-export function Timers() {
+export function TimersList() {
 	const [runningTimer, setRunningTimer] = useState<string>();
 	const [lastStartTime, setLastStartTime] = useState<number>();
 	const [timeSince, setTimeSince] = useState<number>();
