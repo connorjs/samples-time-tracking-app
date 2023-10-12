@@ -1,0 +1,54 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	// https://www.typescriptlang.org/tsconfig
+	"compilerOptions": {
+		/* eslint-disable jsonc/sort-keys -- Documentation order */
+		// Type checking
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"strict": true,
+
+		// Modules
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		// We use ESBuild and Vite (or similar), so bundler.
+		// See https://github.com/microsoft/TypeScript/issues/50152 and
+		// https://github.com/microsoft/TypeScript/pull/51669 for context.
+
+		// Emit
+		"importHelpers": false,
+		"noEmit": true,
+
+		// JavaScript Support
+		"allowJs": false,
+
+		// Interop Constraints
+		"allowArbitraryExtensions": true,
+		"allowImportingTsExtensions": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"verbatimModuleSyntax": true,
+
+		// Language and Environment
+		"experimentalDecorators": true, // Must keep stage 2 because Vite/esbuild
+		"jsx": "react-jsx",
+		"target": "ESNext",
+		"useDefineForClassFields": true,
+
+		// Projects
+		"incremental": false, // Need to fix for monorepo
+		// "tsBuildInfoFile": "./build/.tsbuildinfo",
+
+		// Completeness
+		"skipLibCheck": true
+		/* eslint-enable jsonc/sort-keys -- END */
+	},
+	"exclude": ["node_modules"]
+}
