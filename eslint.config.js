@@ -1,4 +1,1 @@
-
-
-
-export {default} from "eslint-config-connorjs";
+export { default } from "eslint-config-connorjs";
