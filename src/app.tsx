@@ -2,7 +2,7 @@ import "./app.css";
 
 import { useState } from "react";
 
-import viteLogo from "../../../../../../vite.svg";
+import viteLogo from "/vite.svg?url";
 import reactLogo from "./assets/react.svg";
 
 export function App() {
