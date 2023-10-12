@@ -1,6 +1,7 @@
 {
-	"name": "time-tracking-app",
+	"name": "@connorjs/samples-time-tracking-app",
 	"version": "0.0.0",
+	"description": "Time tracking sample application",
 	"private": true,
 	"type": "module",
 	"scripts": {
